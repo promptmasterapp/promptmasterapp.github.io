@@ -26,7 +26,7 @@
     "language": "Sprache",
     "allLanguages": "Alle Sprachen",
     "rights": "© 2026 Tiki Studios. Alle Rechte vorbehalten.",
-    "lastUpdated": "Stand: 24. September 2026",
+    "lastUpdated": "Stand: 4. Oktober 2026",
     "toc": "Auf dieser Seite",
     "backToTop": "Nach oben",
     "home": "Startseite",
@@ -234,7 +234,7 @@
   },
   "privacy": {
     "title": "Datenschutzerklärung — PromptMaster",
-    "description": "Wie die PromptMaster-App mit Ihren Daten umgeht: Fortschritt bleibt auf dem Gerät, Werbung über Google AdMob, Analyse mit Firebase, Käufe über RevenueCat.",
+    "description": "Wie die PromptMaster-App mit Ihren Daten umgeht: Fortschritt bleibt auf dem Gerät, Werbung über Google AdMob, Analyse mit Firebase, Käufe über RevenueCat oder HUAWEI In-App Purchases.",
     "h1": "Datenschutzerklärung",
     "intro": [
       "Diese Datenschutzerklärung erläutert, welche Informationen die mobile App PromptMaster („PromptMaster“, „die App“) verarbeitet, zu welchen Zwecken und welche Wahlmöglichkeiten Sie haben. PromptMaster wird von Tiki Studios („Tiki Studios“, „wir“, „uns“) entwickelt und betrieben. Diese Datenschutzerklärung gilt für die App unter iOS und Android sowie für diese Website."
@@ -244,7 +244,7 @@
         "id": "summary",
         "title": "Zusammenfassung",
         "body": [
-          "! **Kurz gesagt:** PromptMaster hat keine Nutzerkonten und keine eigenen Server. Ihr Lernfortschritt bleibt auf Ihrem Gerät. Die kostenlose Version zeigt Werbung von Google AdMob. Außerdem nutzen wir Firebase (von Google), um die Nutzung der App zu verstehen und Abstürze zu beheben, sowie RevenueCat zur Verwaltung von Abonnements. Diese Anbieter verarbeiten bestimmte Geräte- und Nutzungsdaten, wie unten beschrieben. Wir verkaufen Ihre personenbezogenen Daten nicht."
+          "! **Kurz gesagt:** PromptMaster hat keine Nutzerkonten und keine eigenen Server. Ihr Lernfortschritt bleibt auf Ihrem Gerät. Die kostenlose Version zeigt Werbung von Google AdMob. Außerdem nutzen wir Firebase (von Google), um die Nutzung der App zu verstehen und Abstürze zu beheben, sowie RevenueCat (in der Version aus HUAWEI AppGallery: HUAWEI In-App Purchases) zur Verwaltung von Abonnements. Diese Anbieter verarbeiten bestimmte Geräte- und Nutzungsdaten, wie unten beschrieben. Wir verkaufen Ihre personenbezogenen Daten nicht."
         ]
       },
       {
@@ -313,10 +313,11 @@
       },
       {
         "id": "purchases",
-        "title": "Käufe und Abonnements (RevenueCat, Apple, Google)",
+        "title": "Käufe und Abonnements (RevenueCat, Apple, Google, Huawei)",
         "body": [
-          "Wenn Sie PromptMaster Premium kaufen, wird die Zahlung vollständig von Apple (App Store) oder Google (Google Play) abgewickelt. Ihre Karten- oder Zahlungsdaten sehen und speichern wir nie.",
-          "Wir nutzen RevenueCat, um Käufe zu validieren und Ihren Abonnementstatus zu verwalten. RevenueCat verarbeitet Kauf- und Abonnementinformationen: Transaktions- und Belegdaten des Stores, das gekaufte Produkt, Kauf- und Ablaufdatum, eine anonyme App-Nutzer-ID, Geräte- und Betriebssysteminformationen sowie Ihre IP-Adresse. Weitere Informationen: [Datenschutzerklärung von RevenueCat](https://www.revenuecat.com/privacy)."
+          "Wenn Sie PromptMaster Premium kaufen, wird die Zahlung vollständig von Apple (App Store), Google (Google Play) oder Huawei (HUAWEI AppGallery) abgewickelt. Ihre Karten- oder Zahlungsdaten sehen und speichern wir nie.",
+          "Wir nutzen RevenueCat, um Käufe zu validieren und Ihren Abonnementstatus zu verwalten. RevenueCat verarbeitet Kauf- und Abonnementinformationen: Transaktions- und Belegdaten des Stores, das gekaufte Produkt, Kauf- und Ablaufdatum, eine anonyme App-Nutzer-ID, Geräte- und Betriebssysteminformationen sowie Ihre IP-Adresse. Weitere Informationen: [Datenschutzerklärung von RevenueCat](https://www.revenuecat.com/privacy).",
+          "Die über HUAWEI AppGallery vertriebene Version von PromptMaster verwendet weder RevenueCat noch Google Play Billing. In dieser Version werden Abonnements über HUAWEI In-App Purchases abgewickelt, einen Dienst von Huawei. Um ein Abonnement zu kaufen oder wiederherzustellen, melden Sie sich auf einem eigenen Bildschirm von Huawei mit Ihrer HUAWEI ID an. Huawei verarbeitet dabei Ihre HUAWEI ID, Bestell-, Abonnement- und Zahlungsinformationen, Geräteinformationen und Ihre IP-Adresse. Die App erhält nur den von Huawei signierten Kaufdatensatz (Produkt, Bestellangaben, Kauf- und Ablaufdatum) und prüft dessen Signatur auf Ihrem Gerät. An uns wird nichts gesendet, denn wir haben keine Server. Google AdMob und Firebase werden auch in dieser Version wie oben beschrieben verwendet; auf Geräten ohne Google-Dienste wird möglicherweise keine Werbung angezeigt. Weitere Informationen: [Datenschutzerklärung von Huawei](https://consumer.huawei.com/en/privacy/privacy-policy/)."
         ]
       },
       {
@@ -334,7 +335,7 @@
         "id": "sharing",
         "title": "Weitergabe und Verkauf von Daten",
         "body": [
-          "Wir verkaufen Ihre personenbezogenen Daten nicht. Daten werden nur an die oben genannten Dienstleister weitergegeben (Google für AdMob und Firebase, RevenueCat sowie Apple oder Google für Zahlungen), jeweils für die beschriebenen Zwecke, sowie wenn dies gesetzlich vorgeschrieben ist.",
+          "Wir verkaufen Ihre personenbezogenen Daten nicht. Daten werden nur an die oben genannten Dienstleister weitergegeben (Google für AdMob und Firebase, RevenueCat, Apple oder Google für Zahlungen sowie Huawei für Zahlungen und Abonnements in der Version aus HUAWEI AppGallery), jeweils für die beschriebenen Zwecke, sowie wenn dies gesetzlich vorgeschrieben ist.",
           "Nach den Gesetzen einiger US-Bundesstaaten kann personalisierte Werbung als „Sharing“ (Weitergabe) oder „Targeted Advertising“ (zielgerichtete Werbung) gelten. Sie können dem widersprechen, indem Sie unter iOS kein Tracking erlauben, unter Android die Personalisierung von Anzeigen deaktivieren oder, wo verfügbar, die Einstellung unter Profil → Werbe-Datenschutz nutzen."
         ]
       },
@@ -342,7 +343,7 @@
         "id": "transfers",
         "title": "Internationale Datenübermittlungen",
         "body": [
-          "Google und RevenueCat können Daten in den Vereinigten Staaten und anderen Ländern verarbeiten. Diese Übermittlungen sind durch geeignete Garantien abgesichert, etwa durch die Standardvertragsklauseln der Europäischen Kommission, wie in den Richtlinien der jeweiligen Anbieter beschrieben."
+          "Google und RevenueCat können Daten in den Vereinigten Staaten und anderen Ländern verarbeiten. Diese Übermittlungen sind durch geeignete Garantien abgesichert, etwa durch die Standardvertragsklauseln der Europäischen Kommission, wie in den Richtlinien der jeweiligen Anbieter beschrieben. In der Version aus HUAWEI AppGallery kann Huawei Daten in den Ländern und Regionen verarbeiten, in denen das Unternehmen tätig ist, abgesichert durch die in seiner eigenen Datenschutzerklärung beschriebenen Garantien."
         ]
       },
       {
@@ -352,7 +353,7 @@
           "- **Daten auf dem Gerät** bleiben gespeichert, bis Sie Ihren Fortschritt zurücksetzen oder die App deinstallieren.",
           "- **Analyse- und Absturzdaten** werden von den Anbietern gemäß ihren Aufbewahrungseinstellungen für begrenzte Zeit gespeichert — zum Beispiel bis zu 14 Monate bei Google Analytics for Firebase und 90 Tage bei Firebase Crashlytics.",
           "- **Werbedaten** werden von Google gemäß den eigenen Richtlinien gespeichert.",
-          "- **Kauf- und Abonnementdaten** werden von RevenueCat, Apple und Google so lange gespeichert, wie es zur Verwaltung Ihres Abonnements und zur Erfüllung ihrer gesetzlichen Pflichten erforderlich ist."
+          "- **Kauf- und Abonnementdaten** werden von RevenueCat, Apple, Google und Huawei so lange gespeichert, wie es zur Verwaltung Ihres Abonnements und zur Erfüllung ihrer gesetzlichen Pflichten erforderlich ist."
         ]
       },
       {
@@ -364,7 +365,7 @@
           "- **Fortschritt löschen:** Profil → Fortschritt zurücksetzen, oder die App deinstallieren.",
           "- **Werbe-Einwilligung ändern:** Profil → Werbe-Datenschutz.",
           "- **Werbe-Tracking einschränken:** über die Tracking- bzw. Werbeeinstellungen Ihres Geräts (siehe oben).",
-          "- **Alles andere:** Schreiben Sie uns an [support@tikistudios.io](mailto:support@tikistudios.io). Da wir keine Konten haben, können wir Daten, die bei unseren Anbietern liegen, in der Regel nicht Ihrer Person zuordnen. Wir helfen Ihnen aber, so gut wir können, und leiten Ihre Anfrage bei Bedarf weiter. Sie können sich auch direkt an Google und RevenueCat wenden."
+          "- **Alles andere:** Schreiben Sie uns an [support@tikistudios.io](mailto:support@tikistudios.io). Da wir keine Konten haben, können wir Daten, die bei unseren Anbietern liegen, in der Regel nicht Ihrer Person zuordnen. Wir helfen Ihnen aber, so gut wir können, und leiten Ihre Anfrage bei Bedarf weiter. Sie können sich auch direkt an Google, RevenueCat und Huawei wenden."
         ]
       },
       {
@@ -465,7 +466,7 @@
         "id": "third-parties",
         "title": "Dienste Dritter",
         "body": [
-          "Die App nutzt Dienste Dritter, etwa den App Store, Google Play, Google AdMob, Firebase und RevenueCat. Für Ihre Nutzung dieser Dienste gelten deren eigene Bedingungen und Datenschutzerklärungen. Wir sind nicht für Dienste Dritter verantwortlich, auch nicht für KI-Tools, die Sie mit den erlernten Techniken nutzen."
+          "Die App nutzt Dienste Dritter, etwa den App Store, Google Play, HUAWEI AppGallery, Google AdMob, Firebase, RevenueCat und HUAWEI In-App Purchases. Für Ihre Nutzung dieser Dienste gelten deren eigene Bedingungen und Datenschutzerklärungen. Wir sind nicht für Dienste Dritter verantwortlich, auch nicht für KI-Tools, die Sie mit den erlernten Techniken nutzen."
         ]
       },
       {

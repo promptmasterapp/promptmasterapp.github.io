@@ -37,7 +37,7 @@ LATIN = {"en", "tr", "de", "fr", "es", "it"}  # Baloo 2 / Figtree cover these
 SUPPORT_EMAIL = "support@tikistudios.io"
 PUBLISHER = "Tiki Studios"          # developer/operator of the app (legal "we")
 BUNDLE_ID = "com.caly.promptmaster"  # iOS bundle ID and Android package name
-LAST_MOD = "2026-09-24"
+LAST_MOD = "2026-10-04"
 PAGES = ["", "privacy/", "terms/", "support/"]  # per language, relative to /<lang>/
 APP_ADS = "google.com, pub-6728738524741574, DIRECT, f08c47fec0942fa0\n"
 

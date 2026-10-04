@@ -26,7 +26,7 @@
     "language": "Dil",
     "allLanguages": "Tüm diller",
     "rights": "© 2026 Tiki Studios. Tüm hakları saklıdır.",
-    "lastUpdated": "Son güncelleme: 24 Eylül 2026",
+    "lastUpdated": "Son güncelleme: 4 Ekim 2026",
     "toc": "Bu sayfada",
     "backToTop": "Başa dön",
     "home": "Ana sayfa",
@@ -234,7 +234,7 @@
   },
   "privacy": {
     "title": "Gizlilik Politikası — PromptMaster",
-    "description": "PromptMaster uygulaması verilerinizi nasıl işler: ilerleme cihazınızda kalır; reklamlar Google AdMob, analiz Firebase, satın almalar RevenueCat üzerinden.",
+    "description": "PromptMaster uygulaması verilerinizi nasıl işler: ilerleme cihazınızda kalır; reklamlar Google AdMob, analiz Firebase, satın almalar RevenueCat veya HUAWEI In-App Purchases üzerinden.",
     "h1": "Gizlilik Politikası",
     "intro": [
       "Bu Gizlilik Politikası, PromptMaster mobil uygulamasının (“PromptMaster”, “uygulama”) hangi bilgileri hangi amaçla işlediğini ve bu konuda hangi seçeneklere sahip olduğunuzu açıklar. PromptMaster, Tiki Studios (“Tiki Studios”, “biz”) tarafından geliştirilir ve işletilir. Bu politika, iOS ve Android’deki uygulama ile bu web sitesi için geçerlidir."
@@ -244,7 +244,7 @@
         "id": "summary",
         "title": "Özet",
         "body": [
-          "! **Kısaca:** PromptMaster’ın kullanıcı hesapları ve kendine ait sunucuları yoktur. Öğrenme ilerlemeniz cihazınızda kalır. Ücretsiz sürümde Google AdMob reklamları gösterilir; uygulamanın nasıl kullanıldığını anlamak ve çökmeleri gidermek için Firebase’i (Google), abonelikleri yönetmek için ise RevenueCat’i kullanırız. Bu sağlayıcılar, aşağıda açıklandığı şekilde bazı cihaz ve kullanım verilerini işler. Kişisel verilerinizi satmayız."
+          "! **Kısaca:** PromptMaster’ın kullanıcı hesapları ve kendine ait sunucuları yoktur. Öğrenme ilerlemeniz cihazınızda kalır. Ücretsiz sürümde Google AdMob reklamları gösterilir; uygulamanın nasıl kullanıldığını anlamak ve çökmeleri gidermek için Firebase’i (Google), abonelikleri yönetmek için ise RevenueCat’i (HUAWEI AppGallery sürümünde HUAWEI In-App Purchases’ı) kullanırız. Bu sağlayıcılar, aşağıda açıklandığı şekilde bazı cihaz ve kullanım verilerini işler. Kişisel verilerinizi satmayız."
         ]
       },
       {
@@ -313,10 +313,11 @@
       },
       {
         "id": "purchases",
-        "title": "Satın almalar ve abonelikler (RevenueCat, Apple, Google)",
+        "title": "Satın almalar ve abonelikler (RevenueCat, Apple, Google, Huawei)",
         "body": [
-          "PromptMaster Premium satın alırsanız ödeme işlemi tamamen Apple (App Store) veya Google (Google Play) tarafından yürütülür. Kart veya ödeme bilgilerinizi hiçbir zaman görmeyiz ve saklamayız.",
-          "Satın almaları doğrulamak ve abonelik durumunuzu yönetmek için RevenueCat’i kullanırız. RevenueCat şu satın alma ve abonelik bilgilerini işler: mağazadan gelen işlem ve makbuz verileri, satın alınan ürün, satın alma ve sona erme tarihleri, anonim bir uygulama kullanıcı kimliği, cihaz ve işletim sistemi bilgileri ile IP adresiniz. Daha fazla bilgi: [RevenueCat Gizlilik Politikası](https://www.revenuecat.com/privacy)."
+          "PromptMaster Premium satın alırsanız ödeme işlemi tamamen Apple (App Store), Google (Google Play) veya Huawei (HUAWEI AppGallery) tarafından yürütülür. Kart veya ödeme bilgilerinizi hiçbir zaman görmeyiz ve saklamayız.",
+          "Satın almaları doğrulamak ve abonelik durumunuzu yönetmek için RevenueCat’i kullanırız. RevenueCat şu satın alma ve abonelik bilgilerini işler: mağazadan gelen işlem ve makbuz verileri, satın alınan ürün, satın alma ve sona erme tarihleri, anonim bir uygulama kullanıcı kimliği, cihaz ve işletim sistemi bilgileri ile IP adresiniz. Daha fazla bilgi: [RevenueCat Gizlilik Politikası](https://www.revenuecat.com/privacy).",
+          "PromptMaster’ın HUAWEI AppGallery üzerinden dağıtılan sürümü RevenueCat’i ve Google Play Faturalandırma’yı kullanmaz. Bu sürümde abonelikler, Huawei’nin bir hizmeti olan HUAWEI In-App Purchases tarafından işlenir. Abonelik satın almak veya geri yüklemek için Huawei’nin kendi ekranında HUAWEI ID’nizle oturum açarsınız. Huawei; HUAWEI ID’nizi, sipariş, abonelik ve ödeme bilgilerinizi, cihaz bilgilerinizi ve IP adresinizi işler. Uygulama yalnızca Huawei tarafından imzalanmış satın alma kaydını (ürün, sipariş bilgileri, satın alma ve sona erme tarihleri) alır ve imzasını cihazınızda doğrular. Bize hiçbir şey gönderilmez; zaten sunucularımız yoktur. Google AdMob ve Firebase bu sürümde de yukarıda açıklandığı şekilde kullanılır; Google hizmetleri bulunmayan cihazlarda reklam gösterilmeyebilir. Daha fazla bilgi: [Huawei Gizlilik Bildirimi](https://consumer.huawei.com/en/privacy/privacy-policy/)."
         ]
       },
       {
@@ -334,7 +335,7 @@
         "id": "sharing",
         "title": "Verilerin paylaşılması ve satılması",
         "body": [
-          "Kişisel verilerinizi satmayız. Veriler yalnızca yukarıda açıklanan hizmet sağlayıcılarla (AdMob ve Firebase için Google, RevenueCat ve ödemeler için Apple veya Google), her biri için belirtilen amaçlarla ve yasaların gerektirdiği durumlarda paylaşılır.",
+          "Kişisel verilerinizi satmayız. Veriler yalnızca yukarıda açıklanan hizmet sağlayıcılarla (AdMob ve Firebase için Google, RevenueCat, ödemeler için Apple veya Google ve HUAWEI AppGallery sürümünde ödemeler ve abonelikler için Huawei), her biri için belirtilen amaçlarla ve yasaların gerektirdiği durumlarda paylaşılır.",
           "ABD’deki bazı eyalet yasalarına göre kişiselleştirilmiş reklamcılık “paylaşım” (sharing) veya “hedefli reklamcılık” (targeted advertising) sayılabilir. Bunu reddetmek için iOS’ta izlemeye izin vermeyebilir, Android’de reklam kişiselleştirmesini devre dışı bırakabilir ya da mevcutsa Profil → Reklam gizlilik ayarları bölümünü kullanabilirsiniz."
         ]
       },
@@ -342,7 +343,7 @@
         "id": "transfers",
         "title": "Yurt dışına veri aktarımı",
         "body": [
-          "Google ve RevenueCat verileri Amerika Birleşik Devletleri’nde ve başka ülkelerde işleyebilir. Bu aktarımlar, sağlayıcıların kendi politikalarında açıklandığı gibi, Avrupa Komisyonu’nun Standart Sözleşme Maddeleri gibi uygun güvencelerle korunur."
+          "Google ve RevenueCat verileri Amerika Birleşik Devletleri’nde ve başka ülkelerde işleyebilir. Bu aktarımlar, sağlayıcıların kendi politikalarında açıklandığı gibi, Avrupa Komisyonu’nun Standart Sözleşme Maddeleri gibi uygun güvencelerle korunur. HUAWEI AppGallery sürümünde Huawei, verileri faaliyet gösterdiği ülke ve bölgelerde, kendi gizlilik politikasında açıklanan güvencelerle işleyebilir."
         ]
       },
       {
@@ -352,7 +353,7 @@
           "- **Cihazdaki veriler**, ilerlemenizi sıfırlayana veya uygulamayı kaldırana kadar saklanır.",
           "- **Analiz ve çökme verileri**, sağlayıcılar tarafından kendi saklama ayarlarına göre sınırlı sürelerle saklanır — örneğin Google Analytics for Firebase için 14 aya kadar, Firebase Crashlytics için 90 gün.",
           "- **Reklam verileri**, Google tarafından kendi politikalarına göre saklanır.",
-          "- **Satın alma ve abonelik verileri**, aboneliğinizi yönetmek ve kendi yasal yükümlülüklerini yerine getirmek için gerektiği sürece RevenueCat, Apple ve Google tarafından saklanır."
+          "- **Satın alma ve abonelik verileri**, aboneliğinizi yönetmek ve kendi yasal yükümlülüklerini yerine getirmek için gerektiği sürece RevenueCat, Apple, Google ve Huawei tarafından saklanır."
         ]
       },
       {
@@ -364,7 +365,7 @@
           "- **İlerlemenizi silmek için:** Profil → İlerlemeyi sıfırla ya da uygulamayı kaldırın.",
           "- **Reklam rızanızı değiştirmek için:** Profil → Reklam gizlilik ayarları.",
           "- **Reklam izlemeyi sınırlamak için:** cihazınızın izleme veya reklam ayarları (yukarıya bakın).",
-          "- **Diğer tüm talepler için:** [support@tikistudios.io](mailto:support@tikistudios.io) adresine e-posta gönderin. Hesap sistemimiz olmadığından, sağlayıcılarımızın elindeki verileri genellikle sizinle ilişkilendiremeyiz; ancak size elimizden geldiğince yardımcı olur ve gerektiğinde talebinizi ilgili sağlayıcıya iletiriz. Google ve RevenueCat ile doğrudan da iletişime geçebilirsiniz."
+          "- **Diğer tüm talepler için:** [support@tikistudios.io](mailto:support@tikistudios.io) adresine e-posta gönderin. Hesap sistemimiz olmadığından, sağlayıcılarımızın elindeki verileri genellikle sizinle ilişkilendiremeyiz; ancak size elimizden geldiğince yardımcı olur ve gerektiğinde talebinizi ilgili sağlayıcıya iletiriz. Google, RevenueCat ve Huawei ile doğrudan da iletişime geçebilirsiniz."
         ]
       },
       {
@@ -465,7 +466,7 @@
         "id": "third-parties",
         "title": "Üçüncü taraf hizmetleri",
         "body": [
-          "Uygulama; App Store, Google Play, Google AdMob, Firebase ve RevenueCat gibi üçüncü taraf hizmetlerini kullanır. Bu hizmetleri kullanımınıza, söz konusu hizmetlerin kendi koşulları ve gizlilik politikaları uygulanır. Öğrendiğiniz tekniklerle kullanmayı seçtiğiniz yapay zekâ araçları dahil, üçüncü taraf hizmetlerinden sorumlu değiliz."
+          "Uygulama; App Store, Google Play, HUAWEI AppGallery, Google AdMob, Firebase, RevenueCat ve HUAWEI In-App Purchases gibi üçüncü taraf hizmetlerini kullanır. Bu hizmetleri kullanımınıza, söz konusu hizmetlerin kendi koşulları ve gizlilik politikaları uygulanır. Öğrendiğiniz tekniklerle kullanmayı seçtiğiniz yapay zekâ araçları dahil, üçüncü taraf hizmetlerinden sorumlu değiliz."
         ]
       },
       {

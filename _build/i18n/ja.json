@@ -26,7 +26,7 @@
     "language": "言語",
     "allLanguages": "すべての言語",
     "rights": "© 2026 Tiki Studios. All rights reserved.",
-    "lastUpdated": "最終更新日：2026年9月24日",
+    "lastUpdated": "最終更新日：2026年10月4日",
     "toc": "このページの内容",
     "backToTop": "ページの先頭へ",
     "home": "ホーム",
@@ -234,7 +234,7 @@
   },
   "privacy": {
     "title": "プライバシーポリシー — PromptMaster",
-    "description": "PromptMasterアプリにおけるデータの取り扱いについて。進捗は端末内に保存、広告はGoogle AdMob、分析はFirebase、購入管理はRevenueCatを利用しています。",
+    "description": "PromptMasterアプリにおけるデータの取り扱いについて。進捗は端末内に保存、広告はGoogle AdMob、分析はFirebase、購入管理はRevenueCatまたはHUAWEI In-App Purchasesを利用しています。",
     "h1": "プライバシーポリシー",
     "intro": [
       "本プライバシーポリシーは、PromptMasterモバイルアプリ（以下「PromptMaster」「本アプリ」といいます）が、どのような情報をどのような目的で処理するのか、またお客様にどのような選択肢があるのかを説明するものです。PromptMasterは、Tiki Studios（以下「Tiki Studios」「私たち」といいます）が開発・運営しています。本ポリシーは、iOS版およびAndroid版の本アプリと、本ウェブサイトに適用されます。"
@@ -244,7 +244,7 @@
         "id": "summary",
         "title": "概要",
         "body": [
-          "! **ひとことで言うと：**PromptMasterには、ユーザーアカウントも自前のサーバーもありません。学習の進捗は、お客様の端末内にとどまります。無料版ではGoogle AdMobの広告を表示します。また、アプリの利用状況の把握とクラッシュの修正のためにFirebase（Google提供）を、定期購入の管理のためにRevenueCatを利用しています。これらの事業者は、以下に説明するとおり、端末と利用状況に関する一部のデータを処理します。私たちがお客様の個人データを販売することはありません。"
+          "! **ひとことで言うと：**PromptMasterには、ユーザーアカウントも自前のサーバーもありません。学習の進捗は、お客様の端末内にとどまります。無料版ではGoogle AdMobの広告を表示します。また、アプリの利用状況の把握とクラッシュの修正のためにFirebase（Google提供）を、定期購入の管理のためにRevenueCat（HUAWEI AppGallery版ではHUAWEI In-App Purchases）を利用しています。これらの事業者は、以下に説明するとおり、端末と利用状況に関する一部のデータを処理します。私たちがお客様の個人データを販売することはありません。"
         ]
       },
       {
@@ -313,10 +313,11 @@
       },
       {
         "id": "purchases",
-        "title": "購入と定期購入（RevenueCat、Apple、Google）",
+        "title": "購入と定期購入（RevenueCat、Apple、Google、Huawei）",
         "body": [
-          "PromptMaster Premiumを購入した場合、支払いはすべてApple（App Store）またはGoogle（Google Play）が処理します。私たちがカード情報や支払い情報を目にしたり、保存したりすることはありません。",
-          "購入の検証と定期購入の状態の管理には、RevenueCatを利用しています。RevenueCatが処理する購入と定期購入に関する情報は、ストアからの取引データとレシートデータ、購入した商品、購入日と有効期限、匿名のアプリユーザーID、端末とOSの情報、IPアドレスです。詳しくは、[RevenueCatのプライバシーポリシー](https://www.revenuecat.com/privacy)をご覧ください。"
+          "PromptMaster Premiumを購入した場合、支払いはすべてApple（App Store）、Google（Google Play）またはHuawei（HUAWEI AppGallery）が処理します。私たちがカード情報や支払い情報を目にしたり、保存したりすることはありません。",
+          "購入の検証と定期購入の状態の管理には、RevenueCatを利用しています。RevenueCatが処理する購入と定期購入に関する情報は、ストアからの取引データとレシートデータ、購入した商品、購入日と有効期限、匿名のアプリユーザーID、端末とOSの情報、IPアドレスです。詳しくは、[RevenueCatのプライバシーポリシー](https://www.revenuecat.com/privacy)をご覧ください。",
+          "HUAWEI AppGallery版のPromptMasterでは、RevenueCatとGoogle Play Billingは使用していません。このバージョンの定期購入は、HuaweiのサービスであるHUAWEI In-App Purchasesが処理します。定期購入の購入や復元の際は、Huawei独自の画面でHUAWEI IDにサインインしていただきます。Huaweiは、HUAWEI ID、注文・定期購入・支払いに関する情報、端末情報、IPアドレスを処理します。アプリが受け取るのは、Huaweiが署名した購入記録（商品、注文情報、購入日、有効期限）のみで、その署名はお客様の端末上で検証します。私たちに送信される情報はなく、私たちはサーバーも持っていません。このバージョンでも、上記のとおりGoogle AdMobとFirebaseを利用しています。Googleのサービスが搭載されていない端末では、広告が表示されない場合があります。詳しくは、[Huaweiのプライバシーに関する声明](https://consumer.huawei.com/en/privacy/privacy-policy/)をご覧ください。"
         ]
       },
       {
@@ -334,7 +335,7 @@
         "id": "sharing",
         "title": "データの共有と販売",
         "body": [
-          "私たちがお客様の個人データを販売することはありません。データを共有するのは、上記のサービス提供事業者（AdMobとFirebaseについてはGoogle、RevenueCat、支払いについてはAppleまたはGoogle）に、それぞれ記載した目的のために提供する場合と、法律で求められる場合に限られます。",
+          "私たちがお客様の個人データを販売することはありません。データを共有するのは、上記のサービス提供事業者（AdMobとFirebaseについてはGoogle、RevenueCat、支払いについてはAppleまたはGoogle、HUAWEI AppGallery版の支払いと定期購入についてはHuawei）に、それぞれ記載した目的のために提供する場合と、法律で求められる場合に限られます。",
           "米国の一部の州法では、パーソナライズ広告が「共有」または「ターゲティング広告」に該当する場合があります。iOSでトラッキングを許可しない、Androidで広告のパーソナライズをオプトアウトする、または利用可能な場合はプロフィール → 広告のプライバシー設定を使う、のいずれかの方法でオプトアウトできます。"
         ]
       },
@@ -342,7 +343,7 @@
         "id": "transfers",
         "title": "データの国際移転",
         "body": [
-          "GoogleとRevenueCatは、米国やその他の国でデータを処理することがあります。これらの移転は、各事業者のポリシーに記載されているとおり、欧州委員会の標準契約条項などの適切な保護措置によって保護されています。"
+          "GoogleとRevenueCatは、米国やその他の国でデータを処理することがあります。これらの移転は、各事業者のポリシーに記載されているとおり、欧州委員会の標準契約条項などの適切な保護措置によって保護されています。HUAWEI AppGallery版では、Huaweiが事業を展開する国や地域でデータを処理することがあり、その際はHuawei自身のプライバシーポリシーに記載された保護措置が適用されます。"
         ]
       },
       {
@@ -352,7 +353,7 @@
           "- **端末内のデータ：**進捗をリセットするか、アプリをアンインストールするまで保存されます。",
           "- **分析データとクラッシュデータ：**各事業者の保存設定に従い、限られた期間保存されます。たとえば、Google Analytics for Firebaseでは最長14か月、Firebase Crashlyticsでは90日間です。",
           "- **広告データ：**Googleが自社のポリシーに従って保存します。",
-          "- **購入と定期購入のデータ：**RevenueCat、Apple、Googleが、定期購入の管理と各社の法的義務の履行に必要な期間保存します。"
+          "- **購入と定期購入のデータ：**RevenueCat、Apple、Google、Huaweiが、定期購入の管理と各社の法的義務の履行に必要な期間保存します。"
         ]
       },
       {
@@ -364,7 +365,7 @@
           "- **進捗の削除：**プロフィール → 進捗をリセット、またはアプリのアンインストール。",
           "- **広告に関する同意の変更：**プロフィール → 広告のプライバシー設定。",
           "- **広告トラッキングの制限：**端末のトラッキングまたは広告の設定（上記参照）。",
-          "- **その他のご請求：**[support@tikistudios.io](mailto:support@tikistudios.io)までメールでご連絡ください。アカウントがないため、サービス提供事業者が保有するデータをお客様と結び付けることは通常できませんが、できる限りお手伝いし、必要に応じてご請求を事業者に転送します。GoogleやRevenueCatに直接お問い合わせいただくこともできます。"
+          "- **その他のご請求：**[support@tikistudios.io](mailto:support@tikistudios.io)までメールでご連絡ください。アカウントがないため、サービス提供事業者が保有するデータをお客様と結び付けることは通常できませんが、できる限りお手伝いし、必要に応じてご請求を事業者に転送します。Google、RevenueCat、Huaweiに直接お問い合わせいただくこともできます。"
         ]
       },
       {
@@ -465,7 +466,7 @@
         "id": "third-parties",
         "title": "第三者のサービス",
         "body": [
-          "本アプリは、App Store、Google Play、Google AdMob、Firebase、RevenueCatなどの第三者のサービスを利用しています。これらのサービスのご利用には、各サービスの利用規約とプライバシーポリシーが適用されます。私たちは第三者のサービスについて責任を負いません。これには、学んだテクニックを使うためにお客様が選んだAIツールも含まれます。"
+          "本アプリは、App Store、Google Play、HUAWEI AppGallery、Google AdMob、Firebase、RevenueCat、HUAWEI In-App Purchasesなどの第三者のサービスを利用しています。これらのサービスのご利用には、各サービスの利用規約とプライバシーポリシーが適用されます。私たちは第三者のサービスについて責任を負いません。これには、学んだテクニックを使うためにお客様が選んだAIツールも含まれます。"
         ]
       },
       {
