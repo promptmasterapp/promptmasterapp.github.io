@@ -41,11 +41,11 @@ LAST_MOD = "2026-10-04"
 PAGES = ["", "privacy/", "terms/", "support/"]  # per language, relative to /<lang>/
 APP_ADS = "google.com, pub-6728738524741574, DIRECT, f08c47fec0942fa0\n"
 
-FONT_LATIN = ("https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800"
-              "&family=Figtree:wght@400;500;600;700;800&display=swap")
-# Non-Latin pages use the system font (like the app does); only the wordmark
-# needs Baloo 2, so Google Fonts sends just those glyphs (a few KB).
-FONT_WORDMARK = "https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&text=PromptMaster&display=swap"
+# Self-hosted fonts (OFL-licensed woff2 from @fontsource-variable 5.3.0).
+# assets/fonts.css declares the @font-face rules; assets/fonts/*.woff2 hold
+# the files. Google Fonts / fonts.googleapis.com / fonts.gstatic.com are no
+# longer used — no third-party font request is made on page load.
+FONT_CSS = "assets/fonts.css"
 
 T = {}  # lang -> texts
 
@@ -180,7 +180,7 @@ def head(lang, page_dir, title, description, alternates, *, noindex=False, og_ty
     ico = rel(page_dir, "favicon.ico")
     apple = rel(page_dir, "apple-touch-icon.png")
     url = f"{BASE}/{page_dir}"
-    font = FONT_LATIN if lang in LATIN else FONT_WORDMARK
+    fonts = rel(page_dir, FONT_CSS)
     alt_links = "\n".join(
         f'  <link rel="alternate" hreflang="{hl}" href="{href}">' for hl, href in alternates)
     og_alt = "\n".join(
@@ -215,9 +215,7 @@ def head(lang, page_dir, title, description, alternates, *, noindex=False, og_ty
   <link rel="icon" href="{ico}" sizes="any">
   <link rel="icon" href="{fav}" type="image/png">
   <link rel="apple-touch-icon" href="{apple}">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="{font}">
+  <link rel="stylesheet" href="{fonts}">
   <link rel="stylesheet" href="{css}">
   <script src="{js}" defer></script>
 {extra}</head>
@@ -784,12 +782,42 @@ def write(path, text):
     p.write_text(text, "utf-8")
 
 
+# Canonical legal pages now live on tikistudios.io.  The old per-language
+# paths (<lang>/privacy/ and <lang>/terms/) must stay working for links
+# embedded in released app versions, so they redirect via meta-refresh +
+# canonical rather than 404.  Support and product pages are unaffected.
+LEGAL_REDIRECT = {
+    "privacy": "https://tikistudios.io/privacy/promptmaster/",
+    "terms":   "https://tikistudios.io/terms/promptmaster/",
+}
+
+
+def page_redirect(target_url: str) -> str:
+    """Minimal redirect stub: meta-refresh, canonical, JS fallback, no tracking."""
+    u = html.escape(target_url, quote=True)
+    return f"""<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>PromptMaster — moved</title>
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="{u}">
+  <meta http-equiv="refresh" content="0; url={u}">
+  <script>location.replace({repr(target_url)});</script>
+</head>
+<body>
+  <p>This page has moved to <a href="{u}">{u}</a>.</p>
+</body>
+</html>
+"""
+
+
 def main():
     load()
     for lang in LANGS:
         write(f"{lang}/index.html", page_home(lang))
-        write(f"{lang}/privacy/index.html", page_legal(lang, "privacy"))
-        write(f"{lang}/terms/index.html", page_legal(lang, "terms"))
+        write(f"{lang}/privacy/index.html", page_redirect(LEGAL_REDIRECT["privacy"]))
+        write(f"{lang}/terms/index.html", page_redirect(LEGAL_REDIRECT["terms"]))
         write(f"{lang}/support/index.html", page_support(lang))
     write("index.html", page_root())
     write("404.html", page_404())

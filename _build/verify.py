@@ -32,6 +32,7 @@ class Page(HTMLParser):
         self.alternates = []
         self.canonical = None
         self.title = False
+        self.is_redirect = False  # True for meta-refresh redirect stubs
 
     def handle_starttag(self, tag, attrs):
         a = dict(attrs)
@@ -51,6 +52,8 @@ class Page(HTMLParser):
             k = a.get("name") or a.get("property")
             if k:
                 self.meta[k] = a.get("content")
+            if a.get("http-equiv", "").lower() == "refresh":
+                self.is_redirect = True
         if tag == "link" and a.get("rel") == "alternate" and a.get("hreflang"):
             self.alternates.append((a["hreflang"], a["href"]))
         if tag == "link" and a.get("rel") == "canonical":
@@ -107,6 +110,13 @@ def main():
     n_links = 0
     for f, p in parsed.items():
         rel = f.relative_to(ROOT)
+        # Redirect stubs (meta http-equiv="refresh") skip full-page structure
+        # checks — they intentionally have no h1, og tags or hreflang set.
+        # Only verify the canonical points to a well-formed external URL.
+        if p.is_redirect:
+            if not p.canonical or not p.canonical.startswith("https://"):
+                errors.append(f"{rel}: redirect stub missing canonical https URL")
+            continue
         if p.stack:
             errors.append(f"{rel}: unclosed tags {p.stack[:3]}")
         if p.h1 != 1:
@@ -152,7 +162,9 @@ def main():
                 continue
             if frag and target.suffix == ".html":
                 tp = parsed.get(target)
-                if tp and frag not in tp.ids:
+                # Skip anchor check when the target is a redirect stub —
+                # the fragment is lost on redirect, which is acceptable.
+                if tp and not tp.is_redirect and frag not in tp.ids:
                     errors.append(f"{rel}: missing anchor #{frag} in {target.relative_to(ROOT)}")
     # per-language page matrix
     for l in LANGS:
